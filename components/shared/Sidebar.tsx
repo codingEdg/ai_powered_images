@@ -11,7 +11,6 @@ const Sidebar = () => {
   const pathname = usePathname();
   return (
     <aside className="sidebar">
-      <p>this is sidebar component</p>
       <div className="flex size-full flex-col gap-4">
         <Link href="/" className="sidebar-logo">
           <Image
@@ -43,6 +42,7 @@ const Sidebar = () => {
                         height={24}
                         className={`${isActive && "brightness-200"}`}
                       />
+                      {link.label}
                     </Link>
                   </li>
                 );
