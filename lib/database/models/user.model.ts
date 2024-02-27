@@ -14,7 +14,7 @@ export interface UUser extends Document {
   }
 
 // clerkId, email, username, photo, firstName, lastName, planId, creditBalance
-const userSchema = new Schema ({
+const UserSchema = new Schema ({
     firstName : {type : String,  },
     lastName : {type : String,  },
     clerkId : {type : String, required : true, unique : true },
@@ -26,5 +26,5 @@ const userSchema = new Schema ({
 })
 
 
-const User = models?.User || model("User", userSchema)
+const User = models?.User || model("User", UserSchema)
 export default User
