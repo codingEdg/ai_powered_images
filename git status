@@ -1,0 +1,29 @@
+[33mcommit b3be018f49188ca7656aecf3217d62f25f6a4825[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/sidebarUi[m[33m, [m[1;32msidebarUi[m[33m)[m
+Author: Mehtab Ali <mohd2mehtab@gmail.com>
+Date:   Mon Feb 26 02:58:09 2024 +0530
+
+    mobile nav and sidebar is completed
+
+[33mcommit b78af7d4175f23ccba2c9d9921c5278c464eae4a[m
+Author: Mehtab Ali <mohd2mehtab@gmail.com>
+Date:   Mon Feb 26 00:55:52 2024 +0530
+
+    links label in sidebar
+
+[33mcommit 98348654dc7f9b3ad30039ee1f5c616b7d1faeb7[m
+Author: Mehtab Ali <mohd2mehtab@gmail.com>
+Date:   Mon Feb 26 00:44:49 2024 +0530
+
+    sidebar ADDing
+
+[33mcommit 6aa690e27785a95f5374346499b04779449aeeb2[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Mehtab Ali <mohd2mehtab@gmail.com>
+Date:   Mon Feb 26 00:16:50 2024 +0530
+
+    clerk authentication added
+
+[33mcommit fbc63c9bec962310719993ef798327cfb568e416[m
+Author: Mehtab Ali <mohd2mehtab@gmail.com>
+Date:   Sun Feb 25 23:04:13 2024 +0530
+
+    initial commit
