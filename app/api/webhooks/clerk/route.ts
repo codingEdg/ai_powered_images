@@ -7,8 +7,6 @@ import { Webhook } from "svix";
 
 import { createUser, deleteUser, updateUser } from "@/lib/actions/user.actions";
 
-alert("this is route.ts file from vs code");
-
 export async function POST(req: Request) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
   console.log("post requested from vscode api route file");
@@ -54,9 +52,16 @@ export async function POST(req: Request) {
     }) as WebhookEvent;
   } catch (err) {
     console.error("Error verifying webhook:", err);
-    return new Response("Error occured", {
-      status: 400,
-    });
+    return new Response(
+      `Error occured while while verifying webhook event ${{
+        svix_id,
+        svix_signature,
+        svix_timestamp,
+      }}`,
+      {
+        status: 400,
+      }
+    );
   }
 
   // Get the ID and type
