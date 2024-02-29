@@ -53,9 +53,7 @@ export async function POST(req: Request) {
   } catch (err) {
     console.error("Error verifying webhook:", err);
     return new Response(
-      `Error occured while while verifying webhook event ${{
-        wh,
-      }}`,
+      `Error occured while while verifying webhook event ${JSON.stringify(wh)}`,
       {
         status: 400,
       }
