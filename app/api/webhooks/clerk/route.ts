@@ -25,9 +25,12 @@ export async function POST(req: Request) {
 
   // If there are no headers, error out
   if (!svix_id || !svix_timestamp || !svix_signature) {
-    return new Response("Error occured -- no svix headers", {
-      status: 400,
-    });
+    return new Response(
+      "Error occured -- no svix headers. route.ts file ke ander svix or headers ko check karo",
+      {
+        status: 400,
+      }
+    );
   }
 
   // Get the body
