@@ -47,17 +47,15 @@ export async function POST(req: Request) {
   try {
     evt = wh.verify(body, {
       "svix-id": svix_id,
-      "svix-timestamp": svix_timestamp,
-      "svix-signature": svix_signature,
+      // "svix-timestamp": svix_timestamp,
+      // "svix-signature": svix_signature,
     }) as WebhookEvent;
   } catch (err) {
     console.error("Error verifying webhook:", err);
     return new Response(
-      `Error occured while while verifying webhook event ${JSON.stringify({
-        svix_id,
-        svix_signature,
-        svix_timestamp,
-      })}`,
+      `Error occured while while verifying webhook event ${{
+        wh,
+      }}`,
       {
         status: 400,
       }
