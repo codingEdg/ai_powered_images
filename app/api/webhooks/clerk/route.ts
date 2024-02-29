@@ -18,7 +18,7 @@ export async function POST(req: Request) {
     );
   }
 
-  // Get the headers
+  // Get the headers ..
   const headerPayload = headers();
   const svix_id = headerPayload.get("svix-id");
   const svix_timestamp = headerPayload.get("svix-timestamp");
@@ -47,17 +47,14 @@ export async function POST(req: Request) {
   try {
     evt = wh.verify(body, {
       "svix-id": svix_id,
-      // "svix-timestamp": svix_timestamp,
-      // "svix-signature": svix_signature,
+      "svix-timestamp": svix_timestamp,
+      "svix-signature": svix_signature,
     }) as WebhookEvent;
   } catch (err) {
     console.error("Error verifying webhook:", err);
-    return new Response(
-      `Error occured while while verifying webhook event ${JSON.stringify(wh)}`,
-      {
-        status: 400,
-      }
-    );
+    return new Response(`Error occured while while verifying webhook event }`, {
+      status: 400,
+    });
   }
 
   // Get the ID and type
