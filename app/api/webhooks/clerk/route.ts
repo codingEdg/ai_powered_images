@@ -7,7 +7,7 @@ import { Webhook } from "svix";
 
 import { createUser, deleteUser, updateUser } from "@/lib/actions/user.actions";
 
-console.log("this is route.ts file from vs code");
+alert("this is route.ts file from vs code");
 
 export async function POST(req: Request) {
   // You can find this in the Clerk Dashboard -> Webhooks -> choose the webhook
